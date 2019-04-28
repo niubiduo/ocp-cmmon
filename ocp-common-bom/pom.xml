@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<project
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd"
+	xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>com.nbd</groupId>
+	<artifactId>ocp-common-bom</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<packaging>pom</packaging>
+	<properties>
+		<spring-io.version>Cairo-SR7</spring-io.version>
+		<spring-cloud.version>Finchley.SR3</spring-cloud.version>
+		<nbd.project.version>0.0.1-SNAPSHOT</nbd.project.version>
+		<ocp.core.version>0.0.1-SNAPSHOT</ocp.core.version>
+	</properties>
+	<dependencyManagement>
+		<dependencies>
+			<dependency>
+				<groupId>com.nbd</groupId>
+				<artifactId>ocp-core-bom</artifactId>
+				<version>${ocp.core.version}</version>
+				<type>pom</type>
+				<scope>import</scope>
+			</dependency>
+			<dependency>
+				<groupId>com.nbd</groupId>
+				<artifactId>ocp-common-base-service</artifactId>
+				<version>${project.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.nbd</groupId>
+				<artifactId>ocp-common-busilog</artifactId>
+				<version>${project.version}</version>
+			</dependency>
+		</dependencies>
+	</dependencyManagement>
+</project>
