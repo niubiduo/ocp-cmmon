@@ -1,7 +1,7 @@
-package com.nbd.ocp.common.log.writer;
+package com.nbd.ocp.common.busilog.writer;
 
 
-import com.nbd.ocp.common.log.dto.BusiLogDto;
+import com.nbd.ocp.common.busilog.dto.BusiLogDto;
 
 /**
  * 业务日志发送器

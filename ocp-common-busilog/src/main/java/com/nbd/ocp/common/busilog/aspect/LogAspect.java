@@ -1,6 +1,6 @@
-package com.nbd.ocp.common.log.aspect;
+package com.nbd.ocp.common.busilog.aspect;
 
-import com.nbd.ocp.common.log.process.BusiLogManager;
+import com.nbd.ocp.common.busilog.process.BusiLogManager;
 import org.aspectj.lang.JoinPoint;
 import org.aspectj.lang.annotation.AfterReturning;
 import org.aspectj.lang.annotation.AfterThrowing;
@@ -27,7 +27,7 @@ public class LogAspect {
     @Autowired
     BusiLogManager busiLogManager;
 
-    @Pointcut(value = "@annotation(com.nbd.ocp.common.log.anotation.LogConfig)")
+    @Pointcut(value = "@annotation(com.nbd.ocp.common.busilog.anotation.LogConfig)")
     void hasLogAnnotation() {}
 
 

@@ -1,4 +1,4 @@
-package com.nbd.ocp.common.log.dto;
+package com.nbd.ocp.common.busilog.dto;
 /*
                        _ooOoo_
                       o8888888o
@@ -25,7 +25,7 @@ package com.nbd.ocp.common.log.dto;
 
 import com.nbd.ocp.core.response.OcpJsonContract;
 import com.nbd.ocp.core.response.OcpJsonResponse;
-import com.nbd.ocp.common.log.anotation.LogConfig;
+import com.nbd.ocp.common.busilog.anotation.LogConfig;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 import lombok.ToString;

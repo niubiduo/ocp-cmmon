@@ -1,7 +1,7 @@
-package com.nbd.ocp.common.log.anotation;
+package com.nbd.ocp.common.busilog.anotation;
 
-import com.nbd.ocp.common.log.writer.ILogWriter;
-import com.nbd.ocp.common.log.writer.CloudRestLogWriter;
+import com.nbd.ocp.common.busilog.writer.ILogWriter;
+import com.nbd.ocp.common.busilog.writer.CloudRestLogWriter;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Inherited;

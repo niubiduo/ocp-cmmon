@@ -1,4 +1,4 @@
-package com.nbd.ocp.common.log;
+package com.nbd.ocp.common.busilog.writer;
 /*
                        _ooOoo_
                       o8888888o
@@ -23,25 +23,27 @@ package com.nbd.ocp.common.log;
 */
 
 
-import com.nbd.ocp.core.exception.system.ExistsDataException;
+import com.nbd.ocp.core.sdk.AbstractBaseSdk;
 import com.nbd.ocp.core.response.OcpJsonResponse;
-import com.nbd.ocp.common.log.anotation.LogConfig;
+import com.nbd.ocp.common.busilog.dto.BusiLogDto;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.scheduling.annotation.Async;
 import org.springframework.stereotype.Service;
+import org.springframework.web.client.RestTemplate;
 
 /**
  * @author jin
  */
 
 @Service
-public class BusiController {
+public class CloudRestLogWriter extends AbstractBaseSdk implements ILogWriter{
 
-    @LogConfig(busiCode="1",operationCode="2")
-    public OcpJsonResponse test(){
-        return OcpJsonResponse.success();
-    }
+    @Autowired
+    private RestTemplate restTemplate;
 
-    @LogConfig(busiCode="1",operationCode="2")
-    public OcpJsonResponse testError(){
-        throw new ExistsDataException("sdf");
+    @Override
+    @Async
+    public void write(BusiLogDto busiLogDto) {
+        restTemplate.postForEntity("http://sc-services-busilog/busi-log",busiLogDto, OcpJsonResponse.class);
     }
 }

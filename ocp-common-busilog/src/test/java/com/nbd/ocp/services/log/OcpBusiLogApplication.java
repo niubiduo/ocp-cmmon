@@ -1,4 +1,4 @@
-package com.nbd.ocp.common.log;
+package com.nbd.ocp.services.log;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

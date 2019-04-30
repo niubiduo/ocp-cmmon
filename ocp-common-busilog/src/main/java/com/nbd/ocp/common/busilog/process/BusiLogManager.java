@@ -1,4 +1,4 @@
-package com.nbd.ocp.common.log.process;
+package com.nbd.ocp.common.busilog.process;
 /*
                        _ooOoo_
                       o8888888o
@@ -24,11 +24,11 @@ package com.nbd.ocp.common.log.process;
 
 
 import com.nbd.ocp.core.exception.system.SysClassNotFoundException;
-import com.nbd.ocp.common.log.anotation.LogBeanConfig;
-import com.nbd.ocp.common.log.anotation.LogConfig;
-import com.nbd.ocp.common.log.dto.BusiLogDto;
-import com.nbd.ocp.common.log.util.AnnotationUtil;
-import com.nbd.ocp.common.log.writer.ILogWriter;
+import com.nbd.ocp.common.busilog.anotation.LogBeanConfig;
+import com.nbd.ocp.common.busilog.anotation.LogConfig;
+import com.nbd.ocp.common.busilog.dto.BusiLogDto;
+import com.nbd.ocp.common.busilog.util.AnnotationUtil;
+import com.nbd.ocp.common.busilog.writer.ILogWriter;
 import org.aspectj.lang.JoinPoint;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

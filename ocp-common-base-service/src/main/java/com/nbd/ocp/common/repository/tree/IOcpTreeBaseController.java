@@ -28,7 +28,7 @@ import com.nbd.ocp.core.context.util.OcpSpringUtil;
 import com.nbd.ocp.common.repository.tree.request.OcpTreeOcpQueryBaseVo;
 import com.nbd.ocp.core.request.OcpQueryPageBaseVo;
 import com.nbd.ocp.core.response.OcpJsonResponse;
-import com.nbd.ocp.common.log.anotation.LogConfig;
+import com.nbd.ocp.common.busilog.anotation.LogConfig;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.data.domain.Page;

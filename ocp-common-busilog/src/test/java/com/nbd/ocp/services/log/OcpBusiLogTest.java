@@ -1,4 +1,4 @@
-package com.nbd.ocp.common.log;
+package com.nbd.ocp.services.log;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;

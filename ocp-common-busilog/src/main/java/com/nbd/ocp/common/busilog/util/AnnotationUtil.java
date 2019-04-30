@@ -1,4 +1,4 @@
-package com.nbd.ocp.common.log.util;
+package com.nbd.ocp.common.busilog.util;
 /*
                        _ooOoo_
                       o8888888o

@@ -1,4 +1,4 @@
-package com.nbd.ocp.common.log.anotation;
+package com.nbd.ocp.common.busilog.anotation;
 
 
 import java.lang.annotation.ElementType;
